@@ -21,7 +21,7 @@ $wc1.DownloadFile($url1, $output1)
 $wc1.DownloadFile($url2, $output2)
 
 # unzip WAU.zip
-Expand-Archive $output1 -DestinationPath $wd1
+Expand-Archive $output1 -DestinationPath $wd1 -Force
 
 # launch setup
 & $output2
