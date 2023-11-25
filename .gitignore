@@ -1,0 +1,6 @@
+.DS_Store
+cspell.config.yaml
+*.sync-conflict*
+__pycache__
+.vscode/
+.cache/
