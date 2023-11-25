@@ -20,10 +20,10 @@
 ## How Assets Work
 WAU is configured to pull the following assets from this repo at runtime. 
 
-### CONFIG/APPS/included_apps.txt
+### `CONFIG/APPS/included_apps.txt`
 Whitelist of applications to manage. Enter Winget [AppID](https://winget.run)s, one per line. 
 
-### CONFIG/MODS/
+### `CONFIG/MODS/`
 Directory containing "mods" (see description below). 
 
 ## Mods
