@@ -6,6 +6,7 @@
 
 ## Installer Parameters
 ### `-Silent`
+install WUA, prerequisites silently
 
 ### `-UseWhiteList` 
 without: defaults to update all installed apps, excluding custom blacklist (`CONFIG/APPS/excluded_apps.txt`)
