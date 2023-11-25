@@ -1,5 +1,5 @@
 # assets-wau
-#### [Winget-Auto-Update](https://github.com/Romanitho/Winget-AutoUpdate)
+#### Static installer and CI assets for [Winget-Auto-Update](https://github.com/Romanitho/Winget-AutoUpdate)(WAU)
 
 ## Current Local Version
 `1.18.3`
