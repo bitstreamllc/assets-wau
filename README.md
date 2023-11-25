@@ -28,7 +28,7 @@ The mods folder is referenced by WAU at various stages, to provide runtime scrip
 `<AppID><suffix>`
 
 #### Example
-`Adobe.Acrobat.Reader.64-bit-override.txt`
+[`Adobe.Acrobat.Reader.64-bit-override.txt`](https://github.com/bitstreamllc/assets-wau/blob/master/CONFIG/MODS/Adobe.Acrobat.Reader.64-bit-override.txt)
 
 #### AppID
 Find AppIDs [here](https://winget.run).
@@ -36,7 +36,7 @@ Find AppIDs [here](https://winget.run).
 #### Suffixes
 
 ##### Overrides
-`-override.txt`: provide [Winget `--override` functionality](Adobe.Acrobat.Reader.64-bit-override.txt)(passes string/arguments to installer)
+`-override.txt`: provide [Winget `--override` functionality](https://www.techwatching.dev/posts/winget-override)(passes string/arguments to installer)
 
 ##### Scripts
 `-preinstall.ps1`: runs prior to install
@@ -47,7 +47,7 @@ Find AppIDs [here](https://winget.run).
 WAU auto-updates itself by default. See below for instructions on updating installer manually.
 
 ### Manual Procedure
-Download, unzip latest release
+Download, unzip latest release:
   - [Releases](https://github.com/Romanitho/Winget-AutoUpdate/releases)
   - [WAU.zip](https://github.com/Romanitho/Winget-AutoUpdate/releases/latest/download/WAU.zip) (direct download)
 Commit WAU.zip to root of repo (overwrite)
