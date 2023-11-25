@@ -39,9 +39,9 @@ Find AppIDs [here](https://winget.run).
 `-override.txt`: provide [Winget `--override` functionality](https://www.techwatching.dev/posts/winget-override)(passes string/arguments to installer)
 
 ##### Scripts
-`-preinstall.ps1`: runs prior to install
-`-install.ps1`: runs during install
-`-installed.ps1`: runs after confirmed install
+`-preinstall.ps1`: runs prior to install/update
+`-install.ps1`: runs during install/update
+`-installed.ps1`: runs after confirmed install/update
 
 ## Updating WAU
 WAU auto-updates itself by default. See below for instructions on updating installer manually.
