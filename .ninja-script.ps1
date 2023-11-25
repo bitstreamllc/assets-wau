@@ -23,4 +23,4 @@ $wc1.DownloadFile($url2, $output2)
 # unzip WAU.zip
 Expand-Archive $output1 -DestinationPath $wd1 -Force
 
-& $output2
+Start-Process -FilePath $output2 -NoNewWindow
