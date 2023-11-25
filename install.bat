@@ -10,6 +10,6 @@ SET arguments=-Silent -UseWhiteList -NotificationLevel None -UpdatesInterval Dai
 ::::::::::::::::::::::::::::
 :: Run Powershell Script  ::
 ::::::::::::::::::::::::::::
-SET InstallerDir="C:\BITSTREAM\WAU\INSTALL\"
-SET PowershellCmd=Start-Process powershell.exe -Verb RunAs -Argument '-noprofile -executionpolicy bypass -file "$InstallerDir\Winget-AutoUpdate-Install.ps1" %arguments%
-powershell -Command "& {Get-ChildItem -Path '$InstallerDir' -Recurse | Unblock-File; %PowershellCmd%'}"
+
+SET PowershellCmd=Start-Process powershell.exe -Verb RunAs -Argument '-noprofile -executionpolicy bypass -file "C:\BITSTREAM\WAU\INSTALL\Winget-AutoUpdate-Install.ps1" %arguments%
+powershell -Command "& {Get-ChildItem -Path 'C:\BITSTREAM\WAU\INSTALL' -Recurse | Unblock-File; %PowershellCmd%'}"
