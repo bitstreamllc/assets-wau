@@ -5,22 +5,27 @@
 `1.18.3`
 
 ## Installer Parameters
-`-Silent`
+### `-Silent`
 
-`-UseWhiteList` # without: defaults to update all installed apps, excluding custom blacklist (`CONFIG/APPS/excluded_apps.txt`)
+### `-UseWhiteList` 
+without: defaults to update all installed apps, excluding custom blacklist (`CONFIG/APPS/excluded_apps.txt`)
 
-`-NotificationLevel None` # [Full, Success only, None] hides systray icon, does not notify user of successful update
+### `-NotificationLevel None` 
+[Full, Success only, None] hides systray icon, does not notify user of successful update
 
-`-UpdatesInterval Daily` # [Daily, BiDaily, Weekly, BiWeekly, Monthly or Never]
+### `-UpdatesInterval Daily`
+[Daily, BiDaily, Weekly, BiWeekly, Monthly or Never]
 
-`-ListPath https://raw.githubusercontent.com/bitstreamllc/assets-wau/master/CONFIG/APPS/ ` # location (Local/UNC/URL/AzureBlob) of white/blacklist **directory** (`CONFIG/APPS/`)
+### `-ListPath https://raw.githubusercontent.com/bitstreamllc/assets-wau/master/CONFIG/APPS/ `
+location (Local/UNC/URL/AzureBlob) of white/blacklist **directory** (`CONFIG/APPS/`)
 
-`-ModsPath https://raw.githubusercontent.com/bitstreamllc/assets-wau/master/COFIG/MODS/` # location (Local/UNC/URL/AzureBlob) of mods **directory** (`CONFIG/MODS/`)
+### `-ModsPath https://raw.githubusercontent.com/bitstreamllc/assets-wau/master/COFIG/MODS/`
+location (Local/UNC/URL/AzureBlob) of mods **directory** (`CONFIG/MODS/`)
 
 ## Useful Additional (Unused) Parameters
-`-UpdatesAtLogon` # process updates at user logon
+### `-UpdatesAtLogon` # process updates at user logon
 
-`-UpdatesAtTime` # set WAU runtime, defaults to `6AM`
+### `-UpdatesAtTime` # set WAU runtime, defaults to `6AM`
 
 ## How Assets Work
 WAU is configured to pull the following assets from this repo at runtime. 
@@ -30,6 +35,7 @@ Whitelist of applications to manage. Enter Winget [AppID](https://winget.run)s, 
 
 ### `CONFIG/APPS/excluded_apps.txt` (unused)
 *Conflicts with `-UseWhiteList`*
+
 Blacklist of applications to manage. Enter Winget [AppID](https://winget.run)s, one per line. 
 
 ### `CONFIG/MODS/`
@@ -47,7 +53,7 @@ The mods folder is referenced by WAU at various stages, to provide runtime scrip
 #### AppID
 Find AppIDs [here](https://winget.run).
 
-#### Suffixes
+#### Suffix
 
 ##### Overrides
 `-override.txt`: provide [Winget `--override` functionality](https://www.techwatching.dev/posts/winget-override)(passes string/arguments to installer)
