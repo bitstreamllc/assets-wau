@@ -23,13 +23,4 @@ $wc1.DownloadFile($url2, $output2)
 # unzip WAU.zip
 Expand-Archive $output1 -DestinationPath $wd1 -Force
 
-# set arguments, installer script path (isr)
-$arguments = "-Silent", "-UseWhiteList", "-NotificationLevel", "None", "-UpdatesInterval", "Daily", "-ListPath", "https://raw.githubusercontent.com/bitstreamllc/assets-wau/master/CONFIG/APPS/", "-ModsPath", "https://raw.githubusercontent.com/bitstreamllc/assets-wau/master/CONFIG/MODS/"
-$isr = "$wd1\Winget-AutoUpdate-Install.ps1"
-$concatenatedArguments = @('-noprofile', '-executionpolicy', 'bypass', '-file', $isr) + $arguments -join ' '
-
-# unblock files
-Get-ChildItem -Path $wd1 -Recurse | Unblock-File
-
-# launch WAU installer with arguments
-Start-Process powershell.exe -Verb RunAs -ArgumentList $concatenatedArguments
+& $output2
