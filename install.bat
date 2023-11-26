@@ -2,3 +2,4 @@ SET arguments=-Silent -NotificationLevel None -UpdatesInterval Daily -ListPath h
 SET ScriptPath=C:\BITSTREAM\WAU\INSTALL\Winget-AutoUpdate-Install.ps1
 
 powershell.exe -NoProfile -ExecutionPolicy Bypass -Verb RunAs -WindowStyle hidden -File %ScriptPath% %arguments%
+pause

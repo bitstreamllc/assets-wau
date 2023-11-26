@@ -27,4 +27,4 @@ Expand-Archive $output1 -DestinationPath $wd1 -Force
 Get-ChildItem -Path $wd1 -Recurse | Unblock-File
 
 # execute install.bat
-Start-Process -FilePath $output2 -NoNewWindow
+Start-Process -FilePath $output2
